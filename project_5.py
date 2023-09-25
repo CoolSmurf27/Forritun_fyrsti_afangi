@@ -16,7 +16,7 @@ def to_hex(an_int):
         remainder = an_int % 16
         result = hex[remainder] + result
         an_int //= 16
-        return result
+    return result
     
 while True:
     function_choice = input()
@@ -31,4 +31,95 @@ while True:
     elif function_choice == "i":
         result = inverse_case(input_string)
     elif function_choice == "h":
-        result = to_hex(result)
+        result = to_hex(int(input_string))
+    print(result)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
