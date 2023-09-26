@@ -11,7 +11,6 @@ def main():
 
 
 def get_suffix():
-    sys.stderr.write(INPUT_PROMPT)
     return input()
 
 
@@ -31,7 +30,7 @@ def print_country_names(country_names, suffix):
     for country in country_names:
         print(country)
 
-    print(f"{len(country_names)} countries with suffix {suffix} in total")
+    print(f"{len(country_names)} countries with suffix {suffix} in total.")
 
 
 if __name__ == "__main__":
