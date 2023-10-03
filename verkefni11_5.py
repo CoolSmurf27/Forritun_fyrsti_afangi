@@ -7,7 +7,12 @@ def prime_sum(the_given_list_of_numbers: List[int]) -> int:
 
     # Use list comprehension.
     # You should make use of the is_prime() function given below.
-
+    prime_numbers = [num for num in the_given_list_of_numbers if is_prime(num)]
+    
+    # Calculate the sum of prime numbers
+    sum_of_prime = sum(prime_numbers)
+    
+    return sum_of_prime
 
 # This function is given, do not change it, you can however call it.
 def is_prime(number_to_check: int) -> bool:
