@@ -4,7 +4,6 @@ def main():
         display_numbers(numbers)
 
 def get_file():
-    
     while True:
         file_name = input()
         file = open_file(file_name)
