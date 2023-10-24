@@ -9,4 +9,4 @@ def list_to_bool_tuple(a_list: List[str]) -> Tuple[bool]:
             boolean_value.append(bool(i))
     boolean_value_tuple = tuple(boolean_value)
     return boolean_value_tuple
-    
+
