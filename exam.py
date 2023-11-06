@@ -1,3 +1,6 @@
+from question import Question
+from choice_question import ChoiceQuestion
+
 class Exam:
     def __init__(self):
         self.__questions = []
@@ -14,8 +17,7 @@ class Exam:
                 print("True")
                 self.__points += 1
             else:
-                print("False")
-            print()
+                print()
 
     def get_points(self):
         return self.__points
@@ -23,5 +25,6 @@ class Exam:
     def get_num_questions(self):
         return len(self.__questions)
 
-    def __repr__(self):
+    def __str__(self):
         return '\n'.join([str(question) for question in self.__questions])
+

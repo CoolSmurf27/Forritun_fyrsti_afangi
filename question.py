@@ -1,12 +1,11 @@
 class Question:
-    def __init__(self, __question_str, __answer_str):
-        self.__question_str = __question_str
-        self.__answer_str = __answer_str
-    
-    def __question_str(self):
-        return self.__question_str
-    
-    def __answer_str(self):
-        return self.__answer_str
+    def __init__(self, question_str, answer_str):
+        self.__question_str = question_str
+        self.__answer_str = answer_str
 
+    def get_question(self):
+        return self.__question_str
+
+    def check_answer(self, response):
+        return response.lower() == self.__answer_str.lower()
 
